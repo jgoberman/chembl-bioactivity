@@ -102,9 +102,9 @@ When a held-out compound has no close analog in training, the model is worse tha
 
 Random-split train/val/test histograms overlap almost perfectly (means within 0.1 log). The scaffold-split test set is visibly shifted left (mean 6.55 vs train 6.86) — rarer scaffolds tend to come from exploratory papers and are slightly less potent on average. That is the real, mild distribution shift the model has to handle, not an artifact.
 
-## Honest evaluation
+## Evaluation
 
-The story this project tells is *not* "I got R² = 0.64 on ChEMBL." It is:
+Scope of the project:
 
 - Here is the dataset I built (16,613 → 9,055) and what I had to throw away and why (censored measurements, replicate disagreements >1 log, salts, unparseable SMILES).
 - Here is what the model learns on a random split — the easy, leaky number (R² = 0.64).
